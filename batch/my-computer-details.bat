@@ -7,20 +7,23 @@ ECHO [91mMade by 324hz under the MIT license[0m
 ECHO.
 ECHO [92mhttps://github.com/win21H2/my-computer-details[0m
 ECHO.
-ECHO [32mENTER 1, 2, 3 OR 4 TO SELECT YOUR TASK, OR 5 TO EXIT[0m
+ECHO [32mENTER 1, 2, 3, 4 OR 5 TO SELECT YOUR TASK, OR 6 TO EXIT[0m
 ECHO.
 ECHO 1 { BIOS INFORMATION }
 ECHO 2 { HARDWARE INFORMATION }
 ECHO 3 { WINDOWS INFORMATION }
 ECHO 4 { OTHERS }
-ECHO 5 { EXIT }
 ECHO.
-SET /P M=TYPE 1, 2, 3, 4 OR 5, THEN PRESS ENTER:
+ECHO 5 { CLEAR SCREEN }
+ECHO 6 { EXIT }
+ECHO.
+SET /P M=TYPE 1, 2, 3, 4, 5 OR 6 THEN PRESS ENTER:
 IF %M%==1 GOTO BIOS
 IF %M%==2 GOTO HARDWARE
 IF %M%==3 GOTO WINDOWS
 IF %M%==4 GOTO OTHERS
-IF %M%==5 GOTO EOF
+IF %M%==5 GOTO CLEARSCREEN
+IF %M%==6 GOTO EOF
 ELSE CLS GOTO MENU
 
 :BIOS
@@ -89,13 +92,24 @@ GOTO MENU
 :OTHERS
     ECHO. 
     ECHO [36mAPPLICATIONS[0m 
-    ECHO [31mPLEASE WAIT WHILST THE LIST OF APPLICATIONS ARE LOADING[0m 
-    ECHO [31mDO NOT TYPE ANYTHING ELSE![0m
-    wmic product get name,version
+    SET /p choice=Are you sure you want to list out all of your applications? [y/n]
+    IF '%choice%'=='y' (
+        ECHO [31mPLEASE WAIT WHILST THE LIST OF APPLICATIONS ARE LOADING[0m 
+        ECHO [31mDO NOT TYPE ANYTHING ELSE![0m
+        wmic product get name,version
+    ) ELSE (
+        ECHO [91mCANCELLING[0m
+        CLS
+        GOTO MENU
+    )
     ECHO.
     ECHO [91mMade by 324hz under the MIT license[0m
     ECHO.
     ECHO.
+GOTO MENU
+
+:CLEARSCREEN
+CLS
 GOTO MENU
 
 :EOF
