@@ -15,7 +15,7 @@ OR
 > You can run it via file explorer (Pt 2)
 
 Pt 1
- - Locate the unzipped folder and open it in CMD
+ - Locate the unzipped folder and open it in CMD (I have only tested it using CMD so Powershell might not work)
  - Go to the `batch` directory using `cd`
  - Type out the command: `my-computer-details.bat` and if that does not work, try out: `./my-computer-details.bat`
  - That should bring up a menu which is quite easy to navigate
