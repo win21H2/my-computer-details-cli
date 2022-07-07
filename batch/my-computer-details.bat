@@ -7,17 +7,16 @@ ECHO [91mMade by 324hz under the MIT license[0m
 ECHO.
 ECHO [92mhttps://github.com/win21H2/my-computer-details[0m
 ECHO.
-ECHO [32mENTER 1, 2, 3, 4 OR 5 TO SELECT YOUR TASK, OR 6 TO EXIT[0m
+ECHO [32mENTER ONE OF THE NUMBERS IN THE INPUT BOX BELOW[0m
 ECHO.
 ECHO 1 { BIOS INFORMATION }
 ECHO 2 { HARDWARE INFORMATION }
 ECHO 3 { WINDOWS INFORMATION }
 ECHO 4 { OTHERS }
-ECHO.
 ECHO 5 { CLEAR SCREEN }
 ECHO 6 { EXIT }
 ECHO.
-SET /P M=TYPE 1, 2, 3, 4, 5 OR 6 THEN PRESS ENTER:
+SET /P M=TYPE THE TASK NUMBER HERE, THEN PRESS ENTER:
 IF %M%==1 GOTO BIOS
 IF %M%==2 GOTO HARDWARE
 IF %M%==3 GOTO WINDOWS
@@ -61,6 +60,8 @@ GOTO MENU
     ECHO.
     ECHO [34mDISK[0m
     wmic diskdrive get name, model, size
+    :: check if the diskdrive size is over 1000000
+    
     wmic partition get name, size
     ECHO.
     ECHO [34mMANUFACTURER[0m
@@ -70,6 +71,8 @@ GOTO MENU
     ECHO.
     ECHO.
 GOTO MENU
+
+:: IDEAS FOR NEW IMPLEMENTATIONS GO BELOW
 
 :WINDOWS
     ECHO. 
@@ -84,9 +87,6 @@ GOTO MENU
     ECHO [91mMade by 324hz under the MIT license[0m
     ECHO.
     ECHO.
-:: NUMBER OF INSTALLED UPDATES
-:: LIST OF INSTALLED APPLICATIONS IN WINDOWS
-:: http://net-informations.com/q/mis/wmic.html#:~:text=WMIC%20is%20the%20abbreviation%20of,interfaces%20and%20through%20batch%20scripts.
 GOTO MENU
 
 :OTHERS
@@ -115,6 +115,8 @@ GOTO MENU
 :EOF
 SET /p choice=Are you sure you want to exit? [y/n]
 IF '%choice%'=='y' (
+    ECHO [91mEXITING...........[0m
+    timeout /t 1
     CLS
     EXIT
 ) ELSE (
