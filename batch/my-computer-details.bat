@@ -5,6 +5,8 @@ ECHO.
 ECHO.
 ECHO [91mMade by 324hz under the MIT license[0m
 ECHO [91mv0.0.3 mainnet release[0m
+ECHO [91mISSYNCEDWITH beta testnet release: FALSE[0m
+ECHO [91mISSYNCEDWITH dev devnet release: FALSE[0m
 ECHO.
 ECHO [92mhttps://github.com/win21H2/my-computer-details[0m
 ECHO.
@@ -14,17 +16,34 @@ ECHO 3 { WINDOWS INFORMATION }
 ECHO 4 { OTHERS }
 ECHO 5 { CLEAR SCREEN }
 ECHO 6 { EXIT }
+ECHO -------------------------------
+ECHO [33m(7)[0m[36m { DEV DEVNET }[0m
+ECHO [33m(8)[0m[36m { BETA TESTNET }[0m
 ECHO.
 ECHO [32mPLEASE ENTER ONE OF THE NUMBERS IN THE INPUT SECTION BELOW[0m
 ECHO.
-SET /P M=TYPE THE TASK NUMBER HERE, THEN PRESS ENTER:
+SET /P M=
 IF %M%==1 GOTO BIOS
 IF %M%==2 GOTO HARDWARE
 IF %M%==3 GOTO WINDOWS
 IF %M%==4 GOTO OTHERS
 IF %M%==5 GOTO CLEARSCREEN
 IF %M%==6 GOTO EOF
+IF %M%==7 GOTO DEV
+IF %M%==8 GOTO BETA
 ELSE CLS GOTO MENU
+
+:DEV
+    CLS
+    ECHO.
+    ECHO [91mGOING TO DEV DEVNET PLEASE WAIT...[0m
+    START my-computer-details-dev.bat
+
+:BETA
+    CLS
+    ECHO.
+    ECHO [91mGOING TO BETA TESTNET PLEASE WAIT...[0m
+    START my-computer-details-beta.bat
 
 :BIOS
     ECHO. 

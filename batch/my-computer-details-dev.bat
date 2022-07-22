@@ -5,7 +5,9 @@ ECHO.
 ECHO.
 ECHO.
 ECHO [91mMade by 324hz under the MIT license[0m
-ECHO [91mv0.0.6 dev devnet release[0m
+ECHO [91mv0.0.9 dev devnet release[0m
+ECHO [91mISSYNCEDWITH beta testnet release: FALSE[0m
+ECHO [91mISSYNCEDWITH mainnet release: FALSE[0m
 ECHO.
 ECHO [91m!NOTE THAT DEV DEVNET IS STILL UNDER DEVELPMENT AND WILL HAVE BUGS![0m
 ECHO [91mPlease report any bugs/issues as well as features you want here https://github.com/win21H2/my-computer-details/issues[0m
@@ -25,6 +27,9 @@ ECHO [33m(3)[0m[36m { HARDWARE INFORMATION }[0m
 ECHO -------------------------------
 ECHO [33m(4)[0m[36m { CLEAR SCREEN }[0m
 ECHO [33m(5)[0m[36m { EXIT }[0m
+ECHO -------------------------------
+ECHO [33m(6)[0m[36m { BETA TESTNET }[0m
+ECHO [33m(7)[0m[36m { MAINNET }[0m
 ECHO.
 ECHO [32mPLEASE ENTER THE MENU NUMBER/LETTER IN THE INPUT SECTION BELOW[0m
 ECHO.
@@ -34,7 +39,21 @@ IF %M%==2 GOTO BIOS
 IF %M%==3 GOTO HARDWARE
 IF %M%==4 GOTO CLEARSCREEN
 IF %M%==5 GOTO EOF
+IF %M%==6 GOTO BETA
+IF %M%==7 GOTO MAINNET
 ELSE CLS GOTO MENU
+
+:BETA
+    CLS
+    ECHO.
+    ECHO [91mGOING TO BETA TESTNET PLEASE WAIT...[0m
+    START my-computer-details-beta.bat
+
+:MAINNET    
+    CLS
+    ECHO.
+    ECHO [91mGOING TO MAINNET PLEASE WAIT...[0m
+    START my-computer-details.bat
 
 :WHATIS
     ECHO.
