@@ -4,7 +4,7 @@ CLS
 ECHO.
 ECHO.
 ECHO [91mMade by 324hz under the MIT license[0m
-ECHO [91mv0.0.3 official release[0m
+ECHO [91mv0.0.3 mainnet release[0m
 ECHO.
 ECHO [92mhttps://github.com/win21H2/my-computer-details[0m
 ECHO.
@@ -31,6 +31,7 @@ ELSE CLS GOTO MENU
     ECHO [36mBIOS INFORMATION[0m
     ECHO.
     ECHO [34mBIOS[0m 
+    ECHO.
     wmic bios get serialnumber, manufacturer, version
     ECHO.
     ECHO [91mMade by 324hz under the MIT license[0m
@@ -43,27 +44,34 @@ GOTO MENU
     ECHO [36mHARDWARE INFORMATION[0m  
     ECHO.
     ECHO [34mCPU[0m 
+    ECHO.
     wmic cpu get name, manufacturer, threadcount, numberofcores
     wmic computersystem get numberoflogicalprocessors, numberofprocessors
     ECHO.
     ECHO [34mMEMORY[0m 
+    ECHO.
     wmic memorychip get manufacturer, capacity, speed
     wmic computersystem get totalphysicalmemory
     ECHO.
     ECHO [34mGPU[0m 
+    ECHO.
     wmic path win32_VideoController get name, driverversion, currentrefreshrate
     ECHO.
     ECHO [34mMOTHERBOARD[0m
+    ECHO.
     wmic baseboard get product, manufacturer, serialnumber, version
     ECHO.
     ECHO [34mNETWORKING[0m
+    ECHO.
     wmic nic get name, macaddress
     ECHO.
     ECHO [34mDISK[0m
+    ECHO.
     wmic diskdrive get name, model, size
     wmic partition get name, size
     ECHO.
     ECHO [34mMANUFACTURER[0m
+    ECHO.
     wmic computersystem get manufacturer, model, systemfamily
     ECHO.
     ECHO [91mMade by 324hz under the MIT license[0m
@@ -76,9 +84,11 @@ GOTO MENU
     ECHO [36mWINDOWS INFORMATION[0m  
     ECHO.
     ECHO [34mWINDOWS BOOT[0m
+    ECHO.
     wmic computersystem get bootupstate, chassisbootupstate, bootstatus
     ECHO.
     ECHO [34mWINDOWS STARTUP[0m
+    ECHO.
     wmic startup list brief
     ECHO.
     ECHO [91mMade by 324hz under the MIT license[0m
@@ -89,6 +99,7 @@ GOTO MENU
 :OTHERS
     ECHO. 
     ECHO [36mAPPLICATIONS[0m 
+    ECHO.
     SET /p choice=Are you sure you want to list out all of your applications? [y/n]
     IF '%choice%'=='y' (
         ECHO [31mPLEASE WAIT WHILST THE LIST OF APPLICATIONS ARE LOADING[0m 

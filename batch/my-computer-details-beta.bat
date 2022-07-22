@@ -6,7 +6,7 @@ ECHO.
 ECHO [93mScroll up to see the last output![0m
 ECHO.
 ECHO [91mMade by 324hz under the MIT license[0m
-ECHO [91mv0.0.5 beta testnet[0m
+ECHO [91mv0.0.5 beta testnet release[0m
 ECHO.
 ECHO [91m!NOTE THAT BETA TESTNET IS STILL UNDER DEVELPMENT AND WILL HAVE BUGS![0m
 ECHO [91mPlease report any bugs/issues as well as features you want here https://github.com/win21H2/my-computer-details/issues[0m
@@ -92,13 +92,12 @@ ELSE CLS GOTO MENU
     ECHO.
 GOTO MENU
 
-:: ADD SOME TYPE OF SYSTEM WHICH EITHER KEEPS THE USER ON THE PAGE OR SHOWS UP THE MENU!
-
 :BIOS
     ECHO. 
     ECHO [36mBIOS INFORMATION[0m
     ECHO.
     ECHO [34mBIOS[0m 
+    ECHO.
     wmic bios get serialnumber, manufacturer, version, biosversion, name
     ECHO.
     ECHO.
@@ -110,27 +109,34 @@ GOTO MENU
     ECHO [36mHARDWARE INFORMATION[0m  
     ECHO.
     ECHO [34mCPU[0m 
+    ECHO.
     wmic cpu get name, manufacturer, threadcount, numberofcores, status, loadpercentage
     wmic computersystem get numberoflogicalprocessors, numberofprocessors
     ECHO.
     ECHO [34mMEMORY[0m 
+    ECHO.
     wmic memorychip get manufacturer, capacity, speed
     wmic computersystem get totalphysicalmemory
     ECHO.
     ECHO [34mGPU[0m 
+    ECHO.
     wmic path win32_VideoController get name, driverversion, currentrefreshrate
     ECHO.
     ECHO [34mMOTHERBOARD[0m
+    ECHO.
     wmic baseboard get product, manufacturer, serialnumber, version
     ECHO.
     ECHO [34mNETWORKING[0m
+    ECHO.
     wmic nic get name, macaddress
     ECHO.
     ECHO [34mDISK[0m
+    ECHO.
     wmic diskdrive get name, model, size
     wmic partition get name, size
     ECHO.
     ECHO [34mMANUFACTURER[0m
+    ECHO.
     wmic computersystem get manufacturer, model, systemfamily
     ECHO.
     ECHO.
@@ -142,9 +148,11 @@ GOTO MENU
     ECHO [36mWINDOWS INFORMATION[0m  
     ECHO.
     ECHO [34mWINDOWS BOOT[0m
+    ECHO.
     wmic computersystem get bootupstate, chassisbootupstate, bootstatus, systemtype, dnshostname
     ECHO.
     ECHO [34mWINDOWS STARTUP[0m
+    ECHO.
     wmic startup list brief
     ECHO.
     ECHO.
@@ -154,6 +162,7 @@ GOTO MENU
 :APPLICATIONS
     ECHO. 
     ECHO [36mAPPLICATIONS[0m 
+    ECHO.
     SET /p choice=Are you sure you want to list out all of your applications? [y/n]
     IF '%choice%'=='y' (
         ECHO [31mPLEASE WAIT WHILST THE LIST OF APPLICATIONS ARE LOADING[0m 
@@ -172,6 +181,7 @@ GOTO MENU
 :STARTUP 
     ECHO.
     ECHO [36mSTARTUP[0m
+    ECHO.
     SET /p choice=Are you sure you want to list out all of your startup applications? [y/n]
     IF '%choice%'=='y' (
         ECHO [31mPLEASE WAIT WHILST THE LIST OF STARTUP APPLICATIONS ARE LOADING[0m 
