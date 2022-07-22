@@ -1,14 +1,15 @@
 <h1 align="center">my-computer-details</h1>
 <center>
 <img src="https://img.shields.io/badge/beta testnet-v0.0.5-orange">
-<img src="https://img.shields.io/badge/official release-v0.0.3-brightgreen">
+<img src="https://img.shields.io/badge/dev devnet-v0.0.6-red">
+<img src="https://img.shields.io/badge/official mainnet-v0.0.3-brightgreen">
 </center>
 <h4 align="center">The batch file included in this repository will allow you to view the details of your computer including but is not limited to the following: CPU details, RAM details, and BIOS details</h4>
 <br>
-<h6 align="center">Please note that the batch files included here <u>only</u> works on Windows!</h6>
+<h6 align="center">Please note that the batch files included here <u>only</u> work on Windows!</h6>
 <br>
 <h4 align="center">How to use</h4>
-<h5 align="center">The "official" release of the lister is the most stable and I would recommend using it!<br><br>
+<h5 align="center">The "mainnet" release of the lister is the most stable and I would recommend using it!<br><br>
  - You first have to download this repository as a .zip file.<br>
  - You then have to unzip and you have two options:</h5><br>
 
@@ -21,9 +22,11 @@ You can run it via file explorer (pt 2)</h6>
 <br><br>
 - Go to the `batch` folder using the `cd` command
 <br><br>
-- For the `official release`, type out/copy paste the command `my-computer-details.bat` and if that does not work, try out `./my-computer-details.bat`
+- For the `mainnet` release, type out/copy paste the command `my-computer-details.bat` and if that does not work, try out `./my-computer-details.bat`
 <br><br>
-- For the `beta testnet release`, type out/copy paste the command `my-computer-details-beta.bat` and if that does not work, again try out `./my-computer-details-beta.bat`
+- For the `beta testnet` release, type out/copy paste the command `my-computer-details-beta.bat` and if that does not work, again try out `./my-computer-details-beta.bat`
+<br><br>
+- For the `dev devnet` release, type out/copy paste the command `my-computer-details-dev.bat` and if that does not work, again try out `./my-computer-details-dev.bat`
 <br><br>
 - That should bring up a menu which is quite easy to navigate
 
@@ -32,6 +35,6 @@ You can run it via file explorer (pt 2)</h6>
 
 - Locate the unzipped folder and go to the batch directory
 <br><br>
-- Double click on either the file `my-computer-details` or `my-computer-details-beta`
+- Double click on either the file `my-computer-details` or `my-computer-details-beta` or `my-computer-details-dev`
 <br><br>
 - That should again, bring up a menu which is quite easy to navigate

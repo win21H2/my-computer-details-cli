@@ -3,13 +3,15 @@ CLS
 :MENU
 ECHO.
 ECHO.
+ECHO [93mScroll up to see the last output![0m
+ECHO.
 ECHO [91mMade by 324hz under the MIT license[0m
 ECHO [91mv0.0.5 beta testnet[0m
 ECHO.
 ECHO [91m!NOTE THAT BETA TESTNET IS STILL UNDER DEVELPMENT AND WILL HAVE BUGS![0m
 ECHO [91mPlease report any bugs/issues as well as features you want here https://github.com/win21H2/my-computer-details/issues[0m
 ECHO.
-ECHO [91mWhat's different to the official release?[0m
+ECHO [91mWhat's different to the mainnet release?[0m
 ECHO [92m+ Started testing out and adding more WMIC commands[0m
 ECHO [92m+ Changed the format of the contents page[0m
 ECHO [92m+ Added a "what is this tool" section with an overview of the tool[0m
@@ -29,6 +31,7 @@ ECHO [33m(7 c)[0m[36m { CLEAR SCREEN }[0m
 ECHO [33m(8 e)[0m[36m { EXIT }[0m
 ECHO.
 ECHO [32mPLEASE ENTER THE MENU NUMBER/LETTER IN THE INPUT SECTION BELOW[0m
+ECHO.
 ECHO.
 SET /P M=
 IF %M%==1 GOTO WHATIS
@@ -53,18 +56,18 @@ ELSE CLS GOTO MENU
     ECHO.
     ECHO [34mWHAT IS THIS TOOL?[0m
     ECHO.
-    ECHO [36mThis tool created by 324hz/win21H2 and is
+    ECHO This tool created by 324hz/win21H2 and is
     ECHO designed to give you a quick overview of your
     ECHO computer's hardware as well as BIOS information
-    ECHO and any software that is on your computer.[0m
-    ECHO [36mThis tool is under the MIT license as followed[0m
+    ECHO and any software that is on your computer.
+    ECHO This tool is under the MIT license as followed
     ECHO.
     ECHO.
     ECHO Copyright 2022 324hz
     ECHO.
     ECHO Permission is hereby granted, free of charge,
     ECHO to any person obtaining a copy of this software
-    ECHO and associated documentation files (the "Software"),
+    ECHO and associated documentation files my-computer-details,
     ECHO to deal in the Software without restriction,
     ECHO including without limitation the rights to use,
     ECHO copy, modify, merge, publish, distribute,
