@@ -4,7 +4,6 @@ CLS
 ECHO.
 ECHO.
 ECHO [91mMade by 324hz under the MIT license[0m
-ECHO. 
 ECHO [91mv0.0.3 official release[0m
 ECHO.
 ECHO [92mhttps://github.com/win21H2/my-computer-details[0m

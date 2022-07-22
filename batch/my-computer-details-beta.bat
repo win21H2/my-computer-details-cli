@@ -4,24 +4,25 @@ CLS
 ECHO.
 ECHO.
 ECHO [91mMade by 324hz under the MIT license[0m
-ECHO. 
 ECHO [91mv0.0.5 beta testnet[0m
+ECHO.
+ECHO [91m!NOTE THAT BETA TESTNET IS STILL UNDER DEVELPMENT AND WILL HAVE BUGS![0m
+ECHO.
+ECHO [91mWhat's different?[0m
+ECHO [92m+ Added the refresh button for testing stages so quickly refresh the screen[0m
+ECHO [92m+ Started testing out more WMIC commands[0m
+ECHO [92m+ Reformatted the menu, adding color to the contents page and removing the input section[0m
+ECHO [91m- Removed the credits under each section (because it shows at the top of the menu anyways)[0m
 ECHO.
 ECHO [92mhttps://github.com/win21H2/my-computer-details[0m
 ECHO.
-ECHO [91mv0.0.5 beta testnet[0m
-ECHO [91mv0.0.5 beta testnet[0m
-ECHO [91mv0.0.5 beta testnet[0m
-ECHO [91mv0.0.5 beta testnet[0m
-ECHO [91mv0.0.5 beta testnet[0m
-ECHO [91mv0.0.5 beta testnet[0m
-ECHO [91m7 { EXIT }[0m
-ECHO 1 { BIOS INFORMATION }
-ECHO 2 { HARDWARE INFORMATION }
-ECHO 3 { WINDOWS INFORMATION }
-ECHO 4 { OTHERS }
-ECHO 5 { CLEAR SCREEN }
-ECHO 6 { REFRESH SCREEN }
+ECHO [36m1 { BIOS INFORMATION }[0m
+ECHO [36m2 { HARDWARE INFORMATION }[0m
+ECHO [36m3 { WINDOWS INFORMATION }[0m
+ECHO [36m4 { OTHERS }[0m
+ECHO [36m5 { CLEAR SCREEN }[0m
+ECHO [36m6 { REFRESH SCREEN }[0m
+ECHO [36m7 { EXIT }[0m
 ECHO.
 ECHO [32mPLEASE ENTER ONE OF THE NUMBERS IN THE INPUT SECTION BELOW[0m
 ECHO.
@@ -36,13 +37,14 @@ IF %M%==7 GOTO EOF
 ELSE CLS GOTO MENU
 
 :BIOS
+    ECHO [31mPLEASE WAIT WHILST BIOS INFORMATION IS LOADING[0m 
+    ECHO [31mDO NOT TYPE ANYTHING ELSE![0m
     ECHO. 
     ECHO [36mBIOS INFORMATION[0m
     ECHO.
     ECHO [34mBIOS[0m 
     wmic bios get serialnumber, manufacturer, version
     ECHO.
-    ECHO [91mMade by 324hz under the MIT license[0m
     ECHO.
     ECHO.
 GOTO MENU
@@ -75,7 +77,6 @@ GOTO MENU
     ECHO [34mMANUFACTURER[0m
     wmic computersystem get manufacturer, model, systemfamily
     ECHO.
-    ECHO [91mMade by 324hz under the MIT license[0m
     ECHO.
     ECHO.
 GOTO MENU
@@ -90,7 +91,6 @@ GOTO MENU
     ECHO [34mWINDOWS STARTUP[0m
     wmic startup list brief
     ECHO.
-    ECHO [91mMade by 324hz under the MIT license[0m
     ECHO.
     ECHO.
 GOTO MENU
@@ -102,6 +102,7 @@ GOTO MENU
     IF '%choice%'=='y' (
         ECHO [31mPLEASE WAIT WHILST THE LIST OF APPLICATIONS ARE LOADING[0m 
         ECHO [31mDO NOT TYPE ANYTHING ELSE![0m
+        ECHO.
         wmic product get name,version
     ) ELSE (
         ECHO [91mCANCELLING[0m
@@ -109,7 +110,6 @@ GOTO MENU
         GOTO MENU
     )
     ECHO.
-    ECHO [91mMade by 324hz under the MIT license[0m
     ECHO.
     ECHO.
 GOTO MENU
