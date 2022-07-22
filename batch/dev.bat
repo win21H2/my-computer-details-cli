@@ -47,13 +47,13 @@ ELSE CLS GOTO MENU
     CLS
     ECHO.
     ECHO [91mGOING TO BETA TESTNET PLEASE WAIT...[0m
-    START my-CD-beta.bat
+    START beta.bat
 
 :MAINNET    
     CLS
     ECHO.
     ECHO [91mGOING TO MAINNET PLEASE WAIT...[0m
-    START my-CD-mainnet.bat
+    START mainnet.bat
 
 :WHATIS
     ECHO.

@@ -22,11 +22,11 @@ You can run it via file explorer (pt 2)</h6>
 <br><br>
 - Go to the `batch` folder using the `cd` command
 <br><br>
-- For the `mainnet` release, type out/copy paste the command `my-computer-details.bat` and if that does not work, try out `./my-computer-details.bat`
+- For the `mainnet` release, type out/copy paste the command `mainnet.bat` and if that does not work, try out `./mainnet.bat`
 <br><br>
-- For the `beta testnet` release, type out/copy paste the command `my-computer-details-beta.bat` and if that does not work, again try out `./my-computer-details-beta.bat`
+- For the `beta testnet` release, type out/copy paste the command `beta.bat` and if that does not work, again try out `./beta.bat`
 <br><br>
-- For the `dev devnet` release, type out/copy paste the command `my-computer-details-dev.bat` and if that does not work, again try out `./my-computer-details-dev.bat`
+- For the `dev devnet` release, type out/copy paste the command `dev.bat` and if that does not work, again try out `./dev.bat`
 <br><br>
 - That should bring up a menu which is quite easy to navigate
 
@@ -35,6 +35,6 @@ You can run it via file explorer (pt 2)</h6>
 
 - Locate the unzipped folder and go to the batch directory
 <br><br>
-- Double click on either the file `my-computer-details` or `my-computer-details-beta` or `my-computer-details-dev`
+- Double click on the release you wish to use: `mainnet` or `beta` or `dev`
 <br><br>
 - That should again, bring up a menu which is quite easy to navigate
