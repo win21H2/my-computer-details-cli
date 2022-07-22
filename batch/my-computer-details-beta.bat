@@ -9,17 +9,23 @@ ECHO [91mv0.0.5 beta testnet[0m
 ECHO.
 ECHO [92mhttps://github.com/win21H2/my-computer-details[0m
 ECHO.
+ECHO [91mv0.0.5 beta testnet[0m
+ECHO [91mv0.0.5 beta testnet[0m
+ECHO [91mv0.0.5 beta testnet[0m
+ECHO [91mv0.0.5 beta testnet[0m
+ECHO [91mv0.0.5 beta testnet[0m
+ECHO [91mv0.0.5 beta testnet[0m
+ECHO [91m7 { EXIT }[0m
 ECHO 1 { BIOS INFORMATION }
 ECHO 2 { HARDWARE INFORMATION }
 ECHO 3 { WINDOWS INFORMATION }
 ECHO 4 { OTHERS }
 ECHO 5 { CLEAR SCREEN }
 ECHO 6 { REFRESH SCREEN }
-ECHO 7 { EXIT }
 ECHO.
 ECHO [32mPLEASE ENTER ONE OF THE NUMBERS IN THE INPUT SECTION BELOW[0m
 ECHO.
-SET /P M=TYPE THE TASK NUMBER HERE, THEN PRESS ENTER:
+SET /P M=
 IF %M%==1 GOTO BIOS
 IF %M%==2 GOTO HARDWARE
 IF %M%==3 GOTO WINDOWS
@@ -64,10 +70,6 @@ GOTO MENU
     ECHO.
     ECHO [34mDISK[0m
     wmic diskdrive get name, model, size
-    :: check if diskdrive size is over 1000000
-    IF wmic diskdrive get size > 1000000 ECHO [31mThe size of the diskdrive is over 1000000[0m
-    :: check if the diskdrive size is over 1000000
-    
     wmic partition get name, size
     ECHO.
     ECHO [34mMANUFACTURER[0m
