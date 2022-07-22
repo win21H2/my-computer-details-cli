@@ -4,9 +4,10 @@ CLS
 ECHO.
 ECHO.
 ECHO [91mMade by 324hz under the MIT license[0m
-ECHO [91mv0.0.3 mainnet release[0m
-ECHO [91mISSYNCEDWITH beta testnet release: FALSE[0m
-ECHO [91mISSYNCEDWITH dev devnet release: FALSE[0m
+ECHO [91mv0.0.3 mainnet release[0m [91mISSYNCEDWITH beta testnet release: FALSE[0m [91mISSYNCEDWITH dev devnet release: FALSE[0m
+::ECHO [91mv0.0.3 mainnet release[0m [32mISSYNCEDWITH beta testnet release: TRUE[0m [91mISSYNCEDWITH mainnet release: FALSE[0m
+::ECHO [91mv0.0.3 mainnet release[0m [91mISSYNCEDWITH beta testnet release: FALSE[0m [32mISSYNCEDWITH mainnet release: TRUE[0m
+::ECHO [91mv0.0.3 mainnet release[0m [32mISSYNCEDWITH beta testnet release: TRUE[0m [32mISSYNCEDWITH mainnet release: TRUE[0m
 ECHO.
 ECHO [92mhttps://github.com/win21H2/my-computer-details[0m
 ECHO.
@@ -17,8 +18,8 @@ ECHO 4 { OTHERS }
 ECHO 5 { CLEAR SCREEN }
 ECHO 6 { EXIT }
 ECHO -------------------------------
-ECHO [33m(7)[0m[36m { DEV DEVNET }[0m
-ECHO [33m(8)[0m[36m { BETA TESTNET }[0m
+ECHO [33m(7)[0m[36m { BETA TESTNET }[0m
+ECHO [33m(8)[0m[36m { DEV DEVNET }[0m
 ECHO.
 ECHO [32mPLEASE ENTER ONE OF THE NUMBERS IN THE INPUT SECTION BELOW[0m
 ECHO.
@@ -29,8 +30,8 @@ IF %M%==3 GOTO WINDOWS
 IF %M%==4 GOTO OTHERS
 IF %M%==5 GOTO CLEARSCREEN
 IF %M%==6 GOTO EOF
-IF %M%==7 GOTO DEV
-IF %M%==8 GOTO BETA
+IF %M%==7 GOTO BETA
+IF %M%==8 GOTO DEV
 ELSE CLS GOTO MENU
 
 :DEV

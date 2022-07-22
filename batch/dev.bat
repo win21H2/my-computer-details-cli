@@ -5,16 +5,14 @@ ECHO.
 ECHO.
 ECHO.
 ECHO [91mMade by 324hz under the MIT license[0m
-ECHO [91mv0.0.9 dev devnet release[0m
-ECHO [91mISSYNCEDWITH beta testnet release: FALSE[0m
-ECHO [91mISSYNCEDWITH mainnet release: FALSE[0m
+ECHO [91mv0.0.9 dev devnet release[0m [32mISSYNCEDWITH beta testnet release: TRUE[0m [91mISSYNCEDWITH mainnet release: FALSE[0m
 ECHO.
 ECHO [91m!NOTE THAT DEV DEVNET IS STILL UNDER DEVELPMENT AND WILL HAVE BUGS![0m
 ECHO [91mPlease report any bugs/issues as well as features you want here https://github.com/win21H2/my-computer-details/issues[0m
 ECHO.
-ECHO [91mWhat's different to the mainnet and beta testnet release?[0m
+ECHO [91mWhat's different compared to the mainnet and beta testnet release?[0m
 ECHO [92m+ Started working on a mini menu after every section which displays the main menu after the user hits the enter key[0m
-ECHO [92m+ Started working on a data saving system which allows the suer to choose if they want to save thier specs to a .txt file[0m
+ECHO [92m+ Started working on a data saving system which allows the user to choose if they want to save the data to a .txt file[0m
 ECHO [91m- Removed most of the sections to reduce code clutter[0m
 ECHO [91m- Removed all of the letter selections to reduce code clutter and make the contents section easier to read[0m
 ECHO.
@@ -28,8 +26,8 @@ ECHO -------------------------------
 ECHO [33m(4)[0m[36m { CLEAR SCREEN }[0m
 ECHO [33m(5)[0m[36m { EXIT }[0m
 ECHO -------------------------------
-ECHO [33m(6)[0m[36m { BETA TESTNET }[0m
-ECHO [33m(7)[0m[36m { MAINNET }[0m
+ECHO [33m(6)[0m[36m { MAINNET }[0m
+ECHO [33m(7)[0m[36m { BETA TESTNET }[0m
 ECHO.
 ECHO [32mPLEASE ENTER THE MENU NUMBER/LETTER IN THE INPUT SECTION BELOW[0m
 ECHO.
@@ -39,8 +37,8 @@ IF %M%==2 GOTO BIOS
 IF %M%==3 GOTO HARDWARE
 IF %M%==4 GOTO CLEARSCREEN
 IF %M%==5 GOTO EOF
-IF %M%==6 GOTO BETA
-IF %M%==7 GOTO MAINNET
+IF %M%==6 GOTO MAINNET
+IF %M%==7 GOTO BETA
 ELSE CLS GOTO MENU
 
 :BETA
@@ -56,6 +54,7 @@ ELSE CLS GOTO MENU
     CALL mainnet.bat
 
 :WHATIS
+    CLS
     ECHO.
     ECHO [34mWHAT IS THIS TOOL?[0m
     ECHO.
@@ -83,6 +82,7 @@ ELSE CLS GOTO MENU
     )
 
 :BIOS
+    CLS
     ECHO. 
     ECHO [36mBIOS INFORMATION[0m
     ECHO.
@@ -102,6 +102,7 @@ ELSE CLS GOTO MENU
     )
 
 :HARDWARE
+    CLS
     ECHO.   
     ECHO [36mHARDWARE INFORMATION[0m  
     ECHO.

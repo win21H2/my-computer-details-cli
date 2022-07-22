@@ -3,60 +3,48 @@ CLS
 :MENU
 ECHO.
 ECHO.
-ECHO [93mScroll up to see the last output![0m
 ECHO.
 ECHO [91mMade by 324hz under the MIT license[0m
-ECHO [91mv0.0.5 beta testnet release[0m
-ECHO [91mISSYNCEDWITH dev devnet release: FALSE[0m
-ECHO [91mISSYNCEDWITH mainnet release: FALSE[0m
+ECHO [91mv0.0.5 beta testnet release[0m [32mISSYNCEDWITH dev devnet release: TRUE[0m [91mISSYNCEDWITH mainnet release: FALSE[0m
 ECHO.
 ECHO [91m!NOTE THAT BETA TESTNET IS STILL UNDER DEVELPMENT AND WILL HAVE BUGS![0m
 ECHO [91mPlease report any bugs/issues as well as features you want here https://github.com/win21H2/my-computer-details/issues[0m
 ECHO.
-ECHO [91mWhat's different to the mainnet release?[0m
+ECHO [91mWhat's different compared to the mainnet release?[0m
 ECHO [92m+ Started testing out and adding more WMIC commands[0m
 ECHO [92m+ Changed the format of the contents page[0m
 ECHO [92m+ Added a "what is this tool" section with an overview of the tool[0m
-ECHO [92m+ Added letters to the menu for if the user wants to type out the first letter[0m
 ECHO [92m+ Reformatted the menu, adding color to the contents page and removing the input section[0m
 ECHO [91m- Removed the credits under each section (because it shows at the top of the menu anyways)[0m
 ECHO.
 ECHO [92mShare the software using the link https://github.com/win21H2/my-computer-details[0m
 ECHO.
-ECHO [33m(1 whatis)[0m[36m { WHAT IS THIS TOOL? }[0m
-ECHO [33m(2 b)[0m[36m { BIOS INFORMATION }[0m
-ECHO [33m(3 h)[0m[36m { HARDWARE INFORMATION }[0m
-ECHO [33m(4 w)[0m[36m { WINDOWS INFORMATION }[0m
-ECHO [33m(5 a)[0m[36m { APPLICATIONS }[0m
-ECHO [33m(6 s)[0m[36m { STARTUP }[0m
-ECHO [33m(7 c)[0m[36m { CLEAR SCREEN }[0m
-ECHO [33m(8 e)[0m[36m { EXIT }[0m
+ECHO [33m(1)[0m[36m { WHAT IS THIS TOOL? }[0m
+ECHO [33m(2)[0m[36m { BIOS INFORMATION }[0m
+ECHO [33m(3)[0m[36m { HARDWARE INFORMATION }[0m
+ECHO [33m(4)[0m[36m { WINDOWS INFORMATION }[0m
+ECHO [33m(5)[0m[36m { APPLICATIONS }[0m
+ECHO [33m(6)[0m[36m { STARTUP }[0m
+ECHO [33m(7)[0m[36m { CLEAR SCREEN }[0m
+ECHO [33m(8)[0m[36m { EXIT }[0m
 ECHO -------------------------------
-ECHO [33m(9)[0m[36m { DEV DEVNET }[0m
-ECHO [33m(10)[0m[36m { MAINNET }[0m
+ECHO [33m(9)[0m[36m { MAINNET }[0m
+ECHO [33m(10)[0m[36m { DEV DEVNET }[0m
 ECHO.
 ECHO [32mPLEASE ENTER THE MENU NUMBER/LETTER IN THE INPUT SECTION BELOW[0m
 ECHO.
 ECHO.
 SET /P M=
 IF %M%==1 GOTO WHATIS
-IF %M%==whatis GOTO WHATIS
 IF %M%==2 GOTO BIOS
-IF %M%==B GOTO BIOS
 IF %M%==3 GOTO HARDWARE
-IF %M%==H GOTO HARDWARE
 IF %M%==4 GOTO WINDOWS
-IF %M%==W GOTO WINDOWS
 IF %M%==5 GOTO APPLICATIONS
-IF %M%==O GOTO APPLICATIONS
 IF %M%==6 GOTO STARTUP
-IF %M%==S GOTO STARTUP
 IF %M%==7 GOTO CLEARSCREEN
-IF %M%==C GOTO CLEARSCREEN
 IF %M%==8 GOTO EOF
-IF %M%==E GOTO EOF
-IF %M%==9 GOTO DEV
-IF %M%==10 GOTO MAINNET
+IF %M%==9 GOTO MAINNET
+IF %M%==10 GOTO DEV
 ELSE CLS GOTO MENU
 
 :DEV
@@ -72,46 +60,35 @@ ELSE CLS GOTO MENU
     CALL mainnet.bat
 
 :WHATIS
+    CLS
     ECHO.
     ECHO [34mWHAT IS THIS TOOL?[0m
     ECHO.
-    ECHO This tool created by 324hz/win21H2 and is
-    ECHO designed to give you a quick overview of your
-    ECHO computer's hardware as well as BIOS information
-    ECHO and any software that is on your computer.
+    ECHO This tool created by 324hz/win21H2 and is designed to give you a quick overview of your computer's hardware as well as BIOS information and any software that is on your computer.
     ECHO This tool is under the MIT license as followed
     ECHO.
     ECHO.
     ECHO Copyright (c) 2022 324hz
     ECHO.
-    ECHO Permission is hereby granted, free of charge,
-    ECHO to any person obtaining a copy of this software
-    ECHO and associated documentation files my-computer-details,
-    ECHO to deal in the Software without restriction,
-    ECHO including without limitation the rights to use,
-    ECHO copy, modify, merge, publish, distribute,
-    ECHO sublicense, and/or sell copies of the Software,
-    ECHO and to permit persons to whom the Software is
-    ECHO furnished to do so, subject to the following conditions:
+    ECHO Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files my-computer-details, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
     ECHO.
-    ECHO The above copyright notice and this permission notice
-    ECHO shall be included in all copies or substantial portions
-    ECHO of the Software.
+    ECHO The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
     ECHO.
-    ECHO THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
-    ECHO ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
-    ECHO TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
-    ECHO PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL 
-    ECHO THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-    ECHO DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-    ECHO TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-    ECHO WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+    ECHO THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL  THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     ECHO.
     ECHO.
     ECHO.
-GOTO MENU
+    SET /p choice=[OK] (hit enter)
+    IF '%choice%'=='OK' (
+        CLS
+        GOTO MENU
+    ) ELSE (
+        CLS
+        GOTO MENU
+    )
 
 :BIOS
+    CLS
     ECHO. 
     ECHO [36mBIOS INFORMATION[0m
     ECHO.
@@ -121,9 +98,17 @@ GOTO MENU
     ECHO.
     ECHO.
     ECHO.
-GOTO MENU
+    SET /p choice=[OK] (hit enter)
+    IF '%choice%'=='OK' (
+        CLS
+        GOTO MENU
+    ) ELSE (
+        CLS
+        GOTO MENU
+    )
 
 :HARDWARE
+    CLS
     ECHO.   
     ECHO [36mHARDWARE INFORMATION[0m  
     ECHO.
@@ -160,9 +145,17 @@ GOTO MENU
     ECHO.
     ECHO.
     ECHO.
-GOTO MENU
+    SET /p choice=[OK] (hit enter)
+    IF '%choice%'=='OK' (
+        CLS
+        GOTO MENU
+    ) ELSE (
+        CLS
+        GOTO MENU
+    )
 
 :WINDOWS
+    CLS
     ECHO. 
     ECHO [36mWINDOWS INFORMATION[0m  
     ECHO.
@@ -176,9 +169,17 @@ GOTO MENU
     ECHO.
     ECHO.
     ECHO.
-GOTO MENU
+    SET /p choice=[OK] (hit enter)
+    IF '%choice%'=='OK' (
+        CLS
+        GOTO MENU
+    ) ELSE (
+        CLS
+        GOTO MENU
+    )
 
 :APPLICATIONS
+    CLS
     ECHO. 
     ECHO [36mAPPLICATIONS[0m 
     ECHO.
@@ -195,9 +196,17 @@ GOTO MENU
     ECHO.
     ECHO.
     ECHO.
-GOTO MENU
+    SET /p choice=[OK] (hit enter)
+    IF '%choice%'=='OK' (
+        CLS
+        GOTO MENU
+    ) ELSE (
+        CLS
+        GOTO MENU
+    )
 
 :STARTUP 
+    CLS
     ECHO.
     ECHO [36mSTARTUP[0m
     ECHO.
@@ -214,13 +223,21 @@ GOTO MENU
     ECHO.
     ECHO.
     ECHO.
-GOTO MENU
+    SET /p choice=[OK] (hit enter)
+    IF '%choice%'=='OK' (
+        CLS
+        GOTO MENU
+    ) ELSE (
+        CLS
+        GOTO MENU
+    )
 
 :CLEARSCREEN
     CLS
 GOTO MENU
 
 :EOF
+CLS
 SET /p choice=[91mAre you sure you want to exit?[0m [y/n]
 IF '%choice%'=='y' (
     ECHO [91mEXITING...........[0m
