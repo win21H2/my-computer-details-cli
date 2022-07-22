@@ -63,13 +63,13 @@ ELSE CLS GOTO MENU
     CLS
     ECHO.
     ECHO [91mGOING TO DEV DEVNET PLEASE WAIT...[0m
-    START my-computer-details-dev.bat
+    START my-CD-dev.bat
 
 :MAINNET
     CLS
     ECHO.
     ECHO [91mGOING TO MAINNET PLEASE WAIT...[0m
-    START my-computer-details.bat
+    START my-CD-mainnet.bat
 
 :WHATIS
     ECHO.
