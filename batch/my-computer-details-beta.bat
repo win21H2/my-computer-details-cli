@@ -63,7 +63,7 @@ ELSE CLS GOTO MENU
     ECHO This tool is under the MIT license as followed
     ECHO.
     ECHO.
-    ECHO Copyright 2022 324hz
+    ECHO Copyright (c) 2022 324hz
     ECHO.
     ECHO Permission is hereby granted, free of charge,
     ECHO to any person obtaining a copy of this software

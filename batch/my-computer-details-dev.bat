@@ -11,23 +11,24 @@ ECHO [91m!NOTE THAT DEV DEVNET IS STILL UNDER DEVELPMENT AND WILL HAVE BUGS![0
 ECHO [91mPlease report any bugs/issues as well as features you want here https://github.com/win21H2/my-computer-details/issues[0m
 ECHO.
 ECHO [91mWhat's different to the mainnet and beta testnet release?[0m
-ECHO [92m+ Started working on a mini menu after every section which displays the main menu after the user inputs "y"[0m
+ECHO [92m+ Started working on a mini menu after every section which displays the main menu after the user hits the enter key[0m
 ECHO [91m- Removed most of the sections to reduce code clutter[0m
 ECHO [91m- Removed the letter selections to reduce code clutter[0m
 ECHO.
 ECHO [92mShare the software using the link https://github.com/win21H2/my-computer-details[0m
 ECHO.
 ECHO [33m(1)[0m[36m { WHAT IS THIS TOOL? }[0m
-ECHO [33m(7)[0m[36m { CLEAR SCREEN }[0m
-ECHO [33m(8)[0m[36m { EXIT }[0m
+ECHO -------------------------------
+ECHO [33m(2)[0m[36m { CLEAR SCREEN }[0m
+ECHO [33m(3)[0m[36m { EXIT }[0m
 ECHO.
 ECHO [32mPLEASE ENTER THE MENU NUMBER/LETTER IN THE INPUT SECTION BELOW[0m
 ECHO.
 ECHO.
 SET /P M=
-IF %M%==1 GOTO WHATIS
-IF %M%==7 GOTO CLEARSCREEN
-IF %M%==8 GOTO EOF
+IF %M%==1 GOTO WHATIS 
+IF %M%==2 GOTO CLEARSCREEN
+IF %M%==3 GOTO EOF
 ELSE CLS GOTO MENU
 
 :WHATIS
@@ -41,7 +42,7 @@ ELSE CLS GOTO MENU
     ECHO This tool is under the MIT license as followed
     ECHO.
     ECHO.
-    ECHO Copyright 2022 324hz
+    ECHO Copyright (c) 2022 324hz
     ECHO.
     ECHO Permission is hereby granted, free of charge,
     ECHO to any person obtaining a copy of this software
@@ -68,21 +69,21 @@ ELSE CLS GOTO MENU
     ECHO.
     ECHO.
     ECHO.
-    SET /p choice=[OK]
+    SET /p choice=[OK] (hit enter)
     IF '%choice%'=='OK' (
+        CLS
         GOTO MENU
     ) ELSE (
-        
+        CLS
+        GOTO MENU
     )
-GOTO MENU
-
-:: ADD SOME TYPE OF SYSTEM WHICH EITHER KEEPS THE USER ON THE PAGE OR SHOWS UP THE MENU!
 
 :CLEARSCREEN
     CLS
 GOTO MENU
 
 :EOF
+CLS
 SET /p choice=[91mAre you sure you want to exit?[0m [y/n]
 IF '%choice%'=='y' (
     ECHO [91mEXITING...........[0m
