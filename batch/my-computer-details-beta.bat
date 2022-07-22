@@ -5,7 +5,7 @@ ECHO.
 ECHO.
 ECHO [91mMade by 324hz under the MIT license[0m
 ECHO. 
-ECHO [91mv0.0.3 official release[0m
+ECHO [91mv0.0.5 beta testnet[0m
 ECHO.
 ECHO [92mhttps://github.com/win21H2/my-computer-details[0m
 ECHO.
@@ -14,7 +14,8 @@ ECHO 2 { HARDWARE INFORMATION }
 ECHO 3 { WINDOWS INFORMATION }
 ECHO 4 { OTHERS }
 ECHO 5 { CLEAR SCREEN }
-ECHO 6 { EXIT }
+ECHO 6 { REFRESH SCREEN }
+ECHO 7 { EXIT }
 ECHO.
 ECHO [32mPLEASE ENTER ONE OF THE NUMBERS IN THE INPUT SECTION BELOW[0m
 ECHO.
@@ -24,7 +25,8 @@ IF %M%==2 GOTO HARDWARE
 IF %M%==3 GOTO WINDOWS
 IF %M%==4 GOTO OTHERS
 IF %M%==5 GOTO CLEARSCREEN
-IF %M%==6 GOTO EOF
+IF %M%==6 GOTO REFRESHSCREEN
+IF %M%==7 GOTO EOF
 ELSE CLS GOTO MENU
 
 :BIOS
@@ -44,7 +46,7 @@ GOTO MENU
     ECHO [36mHARDWARE INFORMATION[0m  
     ECHO.
     ECHO [34mCPU[0m 
-    wmic cpu get name, manufacturer, threadcount, numberofcores
+    wmic cpu get name, manufacturer, threadcount, numberofcores, status, loadpercentage
     wmic computersystem get numberoflogicalprocessors, numberofprocessors
     ECHO.
     ECHO [34mMEMORY[0m 
@@ -62,6 +64,8 @@ GOTO MENU
     ECHO.
     ECHO [34mDISK[0m
     wmic diskdrive get name, model, size
+    :: check if diskdrive size is over 1000000
+    IF wmic diskdrive get size > 1000000 ECHO [31mThe size of the diskdrive is over 1000000[0m
     :: check if the diskdrive size is over 1000000
     
     wmic partition get name, size
@@ -108,8 +112,12 @@ GOTO MENU
     ECHO.
 GOTO MENU
 
+:REFRESHSCREEN 
+    CLS
+GOTO MENU
+
 :CLEARSCREEN
-CLS
+    CLS
 GOTO MENU
 
 :EOF
