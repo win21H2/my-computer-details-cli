@@ -37,13 +37,13 @@ ELSE CLS GOTO MENU
     CLS
     ECHO.
     ECHO [91mGOING TO DEV DEVNET PLEASE WAIT...[0m
-    START dev.bat
+    CALL dev.bat
 
 :BETA
     CLS
     ECHO.
     ECHO [91mGOING TO BETA TESTNET PLEASE WAIT...[0m
-    START beta.bat
+    CALL beta.bat
 
 :BIOS
     ECHO. 
