@@ -61,8 +61,6 @@ GOTO MENU
     ECHO.
     ECHO [34mDISK[0m
     wmic diskdrive get name, model, size
-    :: check if the diskdrive size is over 1000000
-    
     wmic partition get name, size
     ECHO.
     ECHO [34mMANUFACTURER[0m
@@ -97,7 +95,6 @@ GOTO MENU
         ECHO [31mDO NOT TYPE ANYTHING ELSE![0m
         wmic product get name,version
     ) ELSE (
-        ECHO [91mCANCELLING[0m
         CLS
         GOTO MENU
     )
