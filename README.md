@@ -16,19 +16,22 @@
 You can run it via file explorer (pt 2)</h6>
 
 <h3 align="center">pt 1</h3>
-<h5 align="center">- Locate the unzipped folder and open it in CMD (I have only tested it using CMD so Powershell might not work)
+
+- Locate the unzipped folder and open it in CMD (I have only tested it using CMD so Powershell might not work)
 <br><br>
 - Go to the `batch` folder using the `cd` command
 <br><br>
-- Type out the command: `my-computer-details.bat` and if that does not work, try out: `./my-computer-details.bat`
+- For the `official release`, type out/copy paste the command `my-computer-details.bat` and if that does not work, try out `./my-computer-details.bat`
+<br><br>
+- For the `beta testnet release`, type out/copy paste the command `my-computer-details-beta.bat` and if that does not work, again try out `./my-computer-details-beta.bat`
 <br><br>
 - That should bring up a menu which is quite easy to navigate
-</h5>
+
 
 <h3 align="center">pt 2</h3>
-<h5 align="center">- Locate the unzipped folder and go to the batch directory
+
+- Locate the unzipped folder and go to the batch directory
 <br><br>
 - Double click on either the file `my-computer-details` or `my-computer-details-beta`
 <br><br>
 - That should again, bring up a menu which is quite easy to navigate
-</h5>
