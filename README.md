@@ -41,3 +41,5 @@ You can run it via file explorer (pt 2)</h6>
 - Double click on the release you wish to use: `mainnet` or `beta` or `dev`
 <br><br>
 - That should again, bring up a menu which is quite easy to navigate
+
+<h6 align="center">This project is under the GNU General Public License v3.0</h6>
