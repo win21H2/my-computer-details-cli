@@ -4,7 +4,7 @@ CLS
 ECHO.
 ECHO.
 ECHO.
-ECHO [91mMade by 324hz under the MIT license[0m
+ECHO [91mMade by 324hz under the GNU General Public License v3.0[0m
 ECHO [91mv0.0.5 beta testnet release[0m [32mISSYNCEDWITH dev devnet release: TRUE[0m [91mISSYNCEDWITH mainnet release: FALSE[0m
 ECHO.
 ECHO [91m!NOTE THAT BETA TESTNET IS STILL UNDER DEVELPMENT AND WILL HAVE BUGS![0m
@@ -20,16 +20,15 @@ ECHO.
 ECHO [92mShare the software using the link https://github.com/win21H2/my-computer-details[0m
 ECHO.
 ECHO [33m(1)[0m[36m { WHAT IS THIS TOOL? }[0m
+ECHO -------------------------------
 ECHO [33m(2)[0m[36m { BIOS INFORMATION }[0m
 ECHO [33m(3)[0m[36m { HARDWARE INFORMATION }[0m
-ECHO [33m(4)[0m[36m { WINDOWS INFORMATION }[0m
-ECHO [33m(5)[0m[36m { APPLICATIONS }[0m
-ECHO [33m(6)[0m[36m { STARTUP }[0m
-ECHO [33m(7)[0m[36m { CLEAR SCREEN }[0m
-ECHO [33m(8)[0m[36m { EXIT }[0m
 ECHO -------------------------------
-ECHO [33m(9)[0m[36m { MAINNET }[0m
-ECHO [33m(10)[0m[36m { DEV DEVNET }[0m
+ECHO [33m(4)[0m[36m { CLEAR SCREEN }[0m
+ECHO [33m(5)[0m[36m { EXIT }[0m
+ECHO -------------------------------
+ECHO [33m(6)[0m[36m { MAINNET }[0m
+ECHO [33m(7)[0m[36m { BETA TESTNET }[0m
 ECHO.
 ECHO [32mPLEASE ENTER THE MENU NUMBER/LETTER IN THE INPUT SECTION BELOW[0m
 ECHO.

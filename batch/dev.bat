@@ -4,7 +4,7 @@ CLS
 ECHO.
 ECHO.
 ECHO.
-ECHO [91mMade by 324hz under the MIT license[0m
+ECHO [91mMade by 324hz under the GNU General Public License v3.0[0m
 ECHO [91mv0.0.9 dev devnet release[0m [32mISSYNCEDWITH beta testnet release: TRUE[0m [91mISSYNCEDWITH mainnet release: FALSE[0m
 ECHO.
 ECHO [91m!NOTE THAT DEV DEVNET IS STILL UNDER DEVELPMENT AND WILL HAVE BUGS![0m

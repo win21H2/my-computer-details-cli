@@ -3,11 +3,9 @@ CLS
 :MENU
 ECHO.
 ECHO.
-ECHO [91mMade by 324hz under the MIT license[0m
+ECHO.
+ECHO [91mMade by 324hz under the GNU General Public License v3.0[0m
 ECHO [91mv0.0.3 mainnet release[0m [91mISSYNCEDWITH beta testnet release: FALSE[0m [91mISSYNCEDWITH dev devnet release: FALSE[0m
-::ECHO [91mv0.0.3 mainnet release[0m [32mISSYNCEDWITH beta testnet release: TRUE[0m [91mISSYNCEDWITH mainnet release: FALSE[0m
-::ECHO [91mv0.0.3 mainnet release[0m [91mISSYNCEDWITH beta testnet release: FALSE[0m [32mISSYNCEDWITH mainnet release: TRUE[0m
-::ECHO [91mv0.0.3 mainnet release[0m [32mISSYNCEDWITH beta testnet release: TRUE[0m [32mISSYNCEDWITH mainnet release: TRUE[0m
 ECHO.
 ECHO [92mhttps://github.com/win21H2/my-computer-details[0m
 ECHO.
