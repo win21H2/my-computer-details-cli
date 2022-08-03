@@ -5,7 +5,7 @@ ECHO.
 ECHO.
 ECHO.
 ECHO [91mMade by 324hz under the GNU General Public License v3.0[0m
-ECHO [91mv0.0.5 beta testnet release[0m [32mISSYNCEDWITH dev devnet release: TRUE[0m [91mISSYNCEDWITH mainnet release: FALSE[0m
+ECHO [91mv0.0.7 beta testnet release[0m [91mISSYNCEDWITH dev devnet release: FALSE[0m [32mISSYNCEDWITH mainnet release: TRUE[0m
 ECHO.
 ECHO [91m!NOTE THAT BETA TESTNET IS STILL UNDER DEVELPMENT AND WILL HAVE BUGS![0m
 ECHO [91mPlease report any bugs/issues as well as features you want here https://github.com/win21H2/my-computer-details/issues[0m
@@ -32,18 +32,14 @@ ECHO [33m(7)[0m[36m { BETA TESTNET }[0m
 ECHO.
 ECHO [32mPLEASE ENTER THE MENU NUMBER/LETTER IN THE INPUT SECTION BELOW[0m
 ECHO.
-ECHO.
 SET /P M=
-IF %M%==1 GOTO WHATIS
+IF %M%==1 GOTO WHATIS 
 IF %M%==2 GOTO BIOS
 IF %M%==3 GOTO HARDWARE
-IF %M%==4 GOTO WINDOWS
-IF %M%==5 GOTO APPLICATIONS
-IF %M%==6 GOTO STARTUP
-IF %M%==7 GOTO CLEARSCREEN
-IF %M%==8 GOTO EOF
-IF %M%==9 GOTO MAINNET
-IF %M%==10 GOTO DEV
+IF %M%==4 GOTO CLEARSCREEN
+IF %M%==5 GOTO EOF
+IF %M%==6 GOTO MAINNET
+IF %M%==7 GOTO BETA
 ELSE CLS GOTO MENU
 
 :DEV

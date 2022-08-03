@@ -5,7 +5,7 @@ ECHO.
 ECHO.
 ECHO.
 ECHO [91mMade by 324hz under the GNU General Public License v3.0[0m
-ECHO [91mv0.0.9 dev devnet release[0m [32mISSYNCEDWITH beta testnet release: TRUE[0m [91mISSYNCEDWITH mainnet release: FALSE[0m
+ECHO [91mv0.1.0 dev devnet release[0m [91mISSYNCEDWITH beta testnet release: FALSE[0m [91mISSYNCEDWITH mainnet release: FALSE[0m
 ECHO.
 ECHO [91m!NOTE THAT DEV DEVNET IS STILL UNDER DEVELPMENT AND WILL HAVE BUGS![0m
 ECHO [91mPlease report any bugs/issues as well as features you want here https://github.com/win21H2/my-computer-details/issues[0m
@@ -60,16 +60,6 @@ ELSE CLS GOTO MENU
     ECHO.
     ECHO This tool created by 324hz/win21H2 and is designed to give you a quick overview of your computer's hardware as well as BIOS information and any software that is on your computer.
     ECHO This tool is under the MIT license as followed
-    ECHO.
-    ECHO.
-    ECHO Copyright (c) 2022 324hz
-    ECHO.
-    ECHO Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files my-computer-details, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-    ECHO.
-    ECHO The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-    ECHO.
-    ECHO THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL  THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-    ECHO.
     ECHO.
     ECHO.
     SET /p choice=[OK] (hit enter)
