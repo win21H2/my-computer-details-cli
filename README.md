@@ -38,7 +38,7 @@ You can run it via file explorer (pt 2)</h6>
 
 - Locate the unzipped folder and go to the batch directory
 <br><br>
-- Double click on the release you wish to use: `mainnet` or `beta` or `dev`
+- Double click on the release you wish to use: `mainnet` or `beta` or `dev`. Please note that Windows defender might flag this as a virus, but it is not. If you dont feel comfortable running it, you can check the source code in each of the folders in this repository.
 <br><br>
 - That should again, bring up a menu which is quite easy to navigate
 
