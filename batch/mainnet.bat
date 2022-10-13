@@ -4,8 +4,10 @@ CLS
 ECHO.
 ECHO.
 ECHO.
+ECHO my-computer-details
+ECHO.
 ECHO [91mMade by 324hz under the GNU General Public License v3.0[0m
-ECHO [91mv0.0.5 mainnet release[0m [32mISSYNCEDWITH beta testnet release: TRUE[0m [91mISSYNCEDWITH dev devnet release: FALSE[0m
+ECHO [33mv0.0.5 mainnet release[0m [32mSYNCbeta testnet release: TRUE[0m [91mSYNCdev devnet release: FALSE[0m
 ECHO.
 ECHO [92mhttps://github.com/win21H2/my-computer-details[0m
 ECHO.

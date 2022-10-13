@@ -4,8 +4,10 @@ CLS
 ECHO.
 ECHO.
 ECHO.
+ECHO my-computer-details
+ECHO.
 ECHO [91mMade by 324hz under the GNU General Public License v3.0[0m
-ECHO [91mv0.0.7 beta testnet release[0m [91mISSYNCEDWITH dev devnet release: FALSE[0m [32mISSYNCEDWITH mainnet release: TRUE[0m
+ECHO [33mv0.0.7 beta testnet release[0m [91mSYNCdev devnet release: FALSE[0m [32mSYNCmainnet release: TRUE[0m
 ECHO.
 ECHO [91m!NOTE THAT BETA TESTNET IS STILL UNDER DEVELPMENT AND WILL HAVE BUGS![0m
 ECHO [91mPlease report any bugs/issues as well as features you want here https://github.com/win21H2/my-computer-details/issues[0m
