@@ -13,7 +13,7 @@ If you would like to help with this repository with things such as implementing 
 <h5 align="center">The "mainnet" release is the most stable and I would recommend using it!<br><br>
  - You first have to download this repository as a .zip file.<br>
  - You then have to unzip and you have two options:</h5>
-<h5 align="center" style="color: #22272e">You can run it via CLI (pt 1)<br>
+<h5 align="center">You can run it via CLI (pt 1)<br>
 You can run it via file explorer (pt 2)</h5>
 
 <h3 align="center">pt 1</h3>
