@@ -1,7 +1,7 @@
 <p align="center">
  <img src="images/my-x-details-remap.png" width=150>
 </p>
-<h1 align="center">my-computer-details</h1>
+<h1 align="center">my-computer-details-cli</h1>
 <h4 align="center">The batch files included in this repository will allow you to view the details of your computer including but is not limited to the following: CPU details, RAM details, and BIOS details</h4>
 <h6 align="center">Please note that the batch files included here <u>only</u> work on Windows!</h6>
 <h3 align="center">Want to contribute?</h3>
