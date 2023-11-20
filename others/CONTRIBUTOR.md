@@ -2,7 +2,7 @@
 
 Please note that if you would like to contribute you have to either<br><br>
 A: DM via Discord<br>
-DM me via `Discord` (my username is `324Hz#4539`) with the exact message below.
+DM me via `Discord` (my username is `9662e103129a`) with the exact message below.
 <br>⚠️Please change `[YOUR GITHUB USERNAME]` to your github username
 
 `[YOUR GITHUB USERNAME] 662895f4-b576-4890-86bf-a83cfc24543cD mergePRauth`
